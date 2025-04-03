@@ -5,21 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>June Barno - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>June Portfolio</h1>
+        <h1>June Barno</h1>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
         <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">My Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul id="menu">
+                <li><a href="#home" onclick="closeMenu()">Home</a></li>
+                <li><a href="#about" onclick="closeMenu()">About Me</a></li>
+                <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="closeMenu()">My Projects</a></li>
+                <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
             </ul>
         </nav>
     </header>
-    
     <section id="home">
         <h2>June Barno</h2>
         <p>Aspiring Back-End Developer | Public Health Officer</p>
@@ -56,5 +57,6 @@
     <footer>
         <p>&copy; 2025 June Barno. All rights reserved.</p>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>
